@@ -1,8 +1,5 @@
 require 'formula'
 
-# Documentation: https://github.com/mxcl/homebrew/wiki/Formula-Cookbook
-# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
-
 class Javacc < Formula
   homepage 'http://javacc.java.net'
   url 'http://java.net/projects/javacc/downloads/download/javacc-5.0.tar.gz'
