@@ -22,7 +22,7 @@ class Javacc < Formula
     bin.install "bin/jjdoc"
     # (share+'java').install "bin/lib/javacc.jar"
 
-    # adjust path in jjdoc script
+    # adjust path in jjtree script
     inreplace 'bin/jjtree' do |s|
       s.gsub! "`dirname $0`/lib", "#{HOMEBREW_PREFIX}/share/java"
     end
