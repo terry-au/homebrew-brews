@@ -2,33 +2,22 @@ require 'formula'
 
 class Javacc < Formula
   homepage 'http://javacc.java.net'
-  url 'http://java.net/projects/javacc/downloads/download/javacc-5.0.tar.gz'
-  sha1 'ac9f7833bdd427d05c8364406ff82ee7cab4f86f'
+  url 'https://java.net/projects/javacc/downloads/download/releases/Release%206.1.2/javacc-6.1.2-distribution.zip'
+  sha1 '1e63a1b186c405f9172b32b0314ebb0e0ef8c780'
+
+  def script target; <<-EOS.undent
+    #!/bin/sh
+    
+    exec java -cp #{libexec}/javacc-#{version}.jar #{target}
+    EOS
+  end
 
   def install
-    # adjust path in javacc script
-    inreplace 'bin/javacc' do |s|
-      s.gsub! "`dirname $0`/lib", "#{HOMEBREW_PREFIX}/share/java"
-    end
+    libexec.install "target/javacc-#{version}.jar"
 
-    bin.install "bin/javacc"
-    (share+'java').install "bin/lib/javacc.jar"
+    bin.mkpath
 
-    # adjust path in jjdoc script
-    inreplace 'bin/jjdoc' do |s|
-      s.gsub! "`dirname $0`/lib", "#{HOMEBREW_PREFIX}/share/java"
-    end
-
-    bin.install "bin/jjdoc"
-    # (share+'java').install "bin/lib/javacc.jar"
-
-    # adjust path in jjtree script
-    inreplace 'bin/jjtree' do |s|
-      s.gsub! "`dirname $0`/lib", "#{HOMEBREW_PREFIX}/share/java"
-    end
-
-    bin.install "bin/jjtree"
-    # (share+'java').install "bin/lib/javacc.jar"
+    ['javacc', 'jjtree', 'jjdoc'].each {|b| (bin+b).write script b} 
   end
 
   def test
