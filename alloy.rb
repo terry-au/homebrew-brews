@@ -8,12 +8,12 @@ class Alloy < Formula
   def script target; <<-EOS.undent
     #!/bin/sh
     
-    exec java -cp #{libexec}/alloy#{version}.jar #{target}
+    exec java -cp #{libexec}/alloy-#{version}.jar #{target}
     EOS
   end
 
   def install
-    libexec.install "target/alloy#{version}.jar"
+    libexec.install "target/alloy-#{version}.jar"
 
     bin.mkpath
 
