@@ -2,8 +2,8 @@ require 'formula'
 
 class Alloy < Formula
   homepage 'http://alloy.mit.edu/alloy/'
-  url 'http://alloy.mit.edu/alloy/downloads/alloy4.2.jar'
-  sha1 'a670b5f735ce7292105cdeb943fd3e511dd40f60'
+  url 'http://alloy.mit.edu/alloy/downloads/alloy4.jar'
+  sha1 'ed4a7273aee091860132481903ae761feca18cfa'
 
   def script target; <<-EOS.undent
     #!/bin/sh
