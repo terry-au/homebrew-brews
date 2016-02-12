@@ -1,4 +1,4 @@
-cask :v1 => 'geotag-photos-pro' do
+cask 'geotag-photos-pro' do
   version '1.0'
   sha256 '7f6cba30fd0c2bc37a6ad8b41cf68b9d7d6b7e0a1ad32673f7cb2a1a17e93811'
 
