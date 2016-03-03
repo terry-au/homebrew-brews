@@ -1,6 +1,4 @@
-# Documentation: https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/Formula-Cookbook.md
-#                http://www.rubydoc.info/github/Homebrew/homebrew/master/Formula
-# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
+# JavaFX SceneBuilder
 
 class Scenebuilder < Formula
   desc ""
