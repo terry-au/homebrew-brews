@@ -1,6 +1,6 @@
 require 'formula'
 
-class JavaFX-Scene-Builder < Formula
+class JavaFXSceneBuilder < Formula
   homepage 'http://gluonhq.com/open-source/scene-builder/'
   url 'http://download.gluonhq.com/scenebuilder/8.1.1/SceneBuilder-8.1.1.jar'
   sha1 '40abbd9f46cb538fe645ea9d62fa210893676a62'
