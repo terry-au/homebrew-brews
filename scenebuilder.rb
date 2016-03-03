@@ -21,7 +21,7 @@ class Scenebuilder < Formula
 
     bin.mkpath
 
-    ['SceneBuilder'].each {|b| (bin+b).write script b} 
+    ['scenebuilder'].each {|b| (bin+b).write script b} 
   end
 
   def test
