@@ -14,7 +14,7 @@ class Viewber < Formula
   end
 
   def install
-    libexec.install "target/viewber-#{version}.jar"
+    libexec.install "viewber-#{version}.jar"
 
     bin.mkpath
 
