@@ -17,7 +17,7 @@ class Viewber < Formula
     libexec.install "libraries/ViewBer.jar"
     libexec.install "libraries/bcprov-jdk15-139.jar"
     
-    install "oids.txt"
+    prefix.install "oids.txt"
 
     bin.mkpath
 
