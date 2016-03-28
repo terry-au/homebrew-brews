@@ -14,7 +14,8 @@ class Viewber < Formula
   end
 
   def install
-    libexec.install "ViewBer.jar"
+    libexec.install "libraries/ViewBer.jar"
+    libexec.install "libraries/bcprov-jdk15-139.jar"
 
     bin.mkpath
 
