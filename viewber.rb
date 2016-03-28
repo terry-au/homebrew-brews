@@ -3,6 +3,7 @@ require 'formula'
 class Viewber < Formula
   homepage 'http://simpleauthority.com'
   url 'http://web.archive.org/web/20150330012242/http://simpleauthority.com/viewber/ViewBer%201.1.tar.gz'
+  version '1.1'
   sha1 'cbc52866c67a7a97ddc96f1029a91d10eea9c583'
 
   def script target; <<-EOS.undent
