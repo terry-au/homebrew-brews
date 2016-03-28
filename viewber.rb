@@ -19,7 +19,7 @@ class Viewber < Formula
 
     bin.mkpath
 
-    ['viewber'].each {|b| (bin+b).write script b} 
+    ['Viewber'].each {|b| (bin+b).write script b} 
   end
 
   def test
