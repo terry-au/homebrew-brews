@@ -1,4 +1,4 @@
-cask :v1 => 'viewber' do
+class Viewber < Formula
   version '1.1'
   sha256 'b1ada29b91def00fa894b074d16a248f58bae60dcf729a9441a5033c1cea0ecd'
 
