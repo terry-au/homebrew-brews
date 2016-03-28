@@ -9,12 +9,12 @@ class Viewber < Formula
   def script target; <<-EOS.undent
     #!/bin/sh
     
-    exec java -cp #{libexec}/viewber-#{version}.jar #{target}
+    exec java -cp #{libexec}/ViewBer.jar #{target}
     EOS
   end
 
   def install
-    libexec.install "viewber-#{version}.jar"
+    libexec.install "ViewBer.jar"
 
     bin.mkpath
 
