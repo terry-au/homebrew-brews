@@ -9,7 +9,7 @@ class Viewber < Formula
   def script target; <<-EOS.undent
     #!/bin/sh
     
-    exec java -cp #{libexec}/ViewBer.jar:#{libexec}/bcprov-jdk15-139.jar:. com.simpleauthority.viewber.#{target}  
+    exec java -cp #{libexec}/ViewBer.jar:#{libexec}/bcprov-jdk15-139.jar:. com.simpleauthority.viewber.#{target} $* 
     EOS
   end
 
