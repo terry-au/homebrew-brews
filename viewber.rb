@@ -18,6 +18,8 @@ class Viewber < Formula
     libexec.install "libraries/bcprov-jdk15-139.jar"
     
     prefix.install "oids.txt"
+    prefix.install "license.rtf"
+    prefix.install "icon.png"
 
     bin.mkpath
 
