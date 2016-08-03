@@ -4,7 +4,7 @@ class Dumpasn1 < Formula
   homepage 'http://www.cs.auckland.ac.nz/~pgut001/dumpasn1.c'
   url 'http://ftp.de.debian.org/debian/pool/main/d/dumpasn1/dumpasn1_20120521.orig.tar.gz'
   version '20120521'
-  sha1 '925dd68d3d90c3ebdbbd7717dc5f38da9ca48860'
+  sha256 '2af8c03aef7783b72acbdb2447d6061ed1e481533fb78b9b6a9c446593c166ef'
 
   def install
     system "cc -o dumpasn1 dumpasn1.c"
