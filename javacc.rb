@@ -16,7 +16,7 @@ class Javacc < Formula
   def install
     system "ant"
 
-    libexec.install "target/javacc-7.0.2.jar"
+    libexec.install "target/javacc-#{version}.jar"
 
     bin.mkpath
 
