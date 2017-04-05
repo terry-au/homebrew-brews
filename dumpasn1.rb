@@ -19,7 +19,7 @@ class Dumpasn1 < Formula
 
     system "cc -o dumpasn1 dumpasn1.c"
     bin.install 'dumpasn1'
-    etc.install 'dumpasn1.cfg'
+    #etc.install 'dumpasn1.cfg'
   end
 
   def test
