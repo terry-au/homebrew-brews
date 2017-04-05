@@ -13,6 +13,10 @@ class Dumpasn1 < Formula
 
   def install
 
+    resources.each do |r|
+      r.stage
+    end
+
     system "cc -o dumpasn1 dumpasn1.c"
     bin.install 'dumpasn1'
     etc.install 'dumpasn1.cfg'
