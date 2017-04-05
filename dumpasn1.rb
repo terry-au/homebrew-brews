@@ -2,11 +2,21 @@ require 'formula'
 
 class Dumpasn1 < Formula
   homepage 'http://www.cs.auckland.ac.nz/~pgut001/dumpasn1.c'
-  url 'http://ftp.de.debian.org/debian/pool/main/d/dumpasn1/dumpasn1_20150808.orig.tar.gz'
-  version '20150808'
-  sha256 '6119a9e218c6d7744419fda413c8ea850c272a83c1d1716a5cc6b87a63215594'
+  url 'https://www.cs.auckland.ac.nz/~pgut001/dumpasn1.c'
+  version '20170404'
+  sha256 'f2c0b07c1540c1013df49261c0b707a1452ddd0711d195efb4ce26e3f86e2181'
+
+  resource "cfg_file" do
+    url "https://www.cs.auckland.ac.nz/~pgut001/dumpasn1.cfg"
+    sha256 "9774ecae122c2e4e68d97489c46871081e04e746c85135288c4a77d04a0544f7"
+  end
 
   def install
+
+    resources.each do |r|
+      r.stage("#{r.name}")
+    end
+
     system "cc -o dumpasn1 dumpasn1.c"
     bin.install 'dumpasn1'
     etc.install 'dumpasn1.cfg'
