@@ -1,6 +1,3 @@
-#### brews
-=====
+#### My Homebrew Formulas & Casks
 
-My Homebrew Formulas & Casks
-
-For now, this contains formulas for dumpasn1 and javacc.
+For now, this contains formulas for `dumpasn1` and `javacc`.
