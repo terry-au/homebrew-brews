@@ -14,7 +14,7 @@ class Dumpasn1 < Formula
   def install
 
     resources.each do |r|
-      r.stage
+      r.stage buildpath
     end
 
     system "cc -o dumpasn1 dumpasn1.c"
